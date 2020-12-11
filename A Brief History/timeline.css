@@ -1,0 +1,81 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   background-color: #EDF2F7;
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 1em;
+   color: #4A5568;
+}
+
+header{
+  background:#ccc;
+  color:#000;
+  padding: 2rem;
+  margin: 0;
+  margin-bottom: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline {
+   position: relative;
+   max-width: 1200px; /* Restrict the width on large screens */
+   margin: 0 auto; /* Center the content */
+   padding: 30px;
+}
+
+.timeline::after {
+   content: '';
+   position: absolute;
+   width: 6px;
+   background-color: white;
+   top: 0;
+   bottom: 0;
+   left: 50%;
+   margin-left: -3px;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+   position: relative;
+   width: 50%;
+}
+.container-left {
+   left: 0;
+}
+.container-right {
+   left: 50%;
+}
+
+.content {
+   padding: 30px;
+   background-color: white;
+   position: relative;
+   border-radius: 6px;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 480px) {
+   .container {
+       padding-left: 0px;
+       padding-top: 105px;
+   }
+}
+
+.container {
+   /* Existing styles here */
+   z-index: 3;
+}
+
+.container .content::before {
+   left: 25px;
+   top: -10px;
+   border: medium solid white;
+   border-width: 0 10px 10px 10px;
+   border-color: transparent transparent white transparent;
+}
