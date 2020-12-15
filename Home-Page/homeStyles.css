@@ -1,0 +1,97 @@
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header{
+  background:#F4EACE;
+  color:#000;
+  padding: 2rem;
+  margin: 0;
+  margin-bottom: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Vollkorn', serif;
+}
+
+body {
+  background-color:#F4EACE;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 8vh;
+    background color: #231E0D;
+    font-family: 'Lato', sans-serif;
+  }
+
+.logo{
+  color: #231E0D;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 22px;
+}
+nav ul {
+    display:flex;
+    background-color: none;
+    justify-content: space-around;
+    width: 35%;
+}
+
+nav ul{
+    color: #231E0D;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+nav ul li{
+    list-style: none;
+    color:#231E0D;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+footer {
+      background:#F4EACE;
+      color:#231E0D;
+      padding: 2rem;
+      margin: 0;
+      margin-bottom: 0rem;
+      text-align: center;
+}
+
+a:link {
+  color: #231E0D
+}
+a:visited {
+  color: #231E0D
+}
+
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+  }
+}
+
+/* I tried to use JavaScript to make a responsive navigation bar. I referenced a tutorial I found on Youtube,
+https://www.youtube.com/watch?v=gXkqy0b4M5g, but I couldn't get it to work. The Java script I used is in homeScript.js.*/

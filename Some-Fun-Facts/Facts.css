@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "";
+}
+
+header{
+  background:#F4EACE;
+  color:#000;
+  padding: 2rem;
+  margin: 0;
+  margin-bottom: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Vollkorn', serif;
+}
+
+body {
+  background-color:#F4EACE;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 8vh;
+    background color: #5D4954;
+    font-family: 'Lato', sans-sans-serif;
+  }
+
+.logo{
+  color: #231E0D;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 22px;
+}
+nav ul {
+    display:flex;
+    background-color: none;
+    justify-content: space-around;
+    width: 35%;
+}
+
+nav ul{
+    color: #231E0D;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+nav ul li{
+    list-style: none;
+    color:#231E0D;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+footer {
+      background:#F4EACE;
+      color:#231E0D;
+      padding: 2rem;
+      margin: 0;
+      margin-bottom: 0rem;
+      text-align: center;
+}
+
+a:link {
+  color: #231E0D
+}
+a:visited {
+  color: #231E0D
+}
+
+.image{
+    position: relative;
+    width: responsive;
+}
+
+.image__img{
+  width: 100%;
+  z-index: 0;
+}
+.image__overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image__overlay{
+  transform: translateY(0px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover{
+  opacity:1;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+
+}
+
+.image__title{
+  font-family: 'Vollkorn', serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Vollkorn', serif;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 15px;

@@ -3,9 +3,80 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-family: "";
+
+header{
+  background:#F4EACE;
+  color:#000;
+  padding: 2rem;
+  margin: 0;
+  margin-bottom: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Vollkorn', serif;
 }
+
+body {
+  background-color:#F4EACE;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height: 8vh;
+    background color: #5D4954;
+    font-family: 'Lato',sans-serif;
+  }
+
+.logo{
+  color: #231E0D;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 22px;
+}
+nav ul {
+    display:flex;
+    background-color: none;
+    justify-content: space-around;
+    width: 35%;
+}
+
+nav ul{
+    color: #231E0D;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+nav ul li{
+    list-style: none;
+    color:#231E0D;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+footer {
+      background:#F4EACE;
+      color:#231E0D;
+      padding: 2rem;
+      margin: 0;
+      margin-bottom: 0rem;
+      text-align: center;
+}
+
+a:link {
+  color: #231E0D
+}
+a:visited {
+  color: #231E0D
+}
+
+/* break */
+
 .container {
   min-height: 100vh;
   width: 100%;
@@ -13,7 +84,7 @@ html {
   align-items: center;
   justify-content: center;
   padding: 100px 0;
-  background-color: #111;
+  background-color: #231E0D;
 }
 .timeline {
   width: 80%;
@@ -28,8 +99,8 @@ html {
 }
 .timeline ul li {
   padding: 20px;
-  background-color: #1e1f22;
-  color: white;
+  background-color: #F4EACE;
+  color: #231E0D;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -37,32 +108,36 @@ html {
   margin-bottom: 0;
 }
 .timeline-content h1 {
-  font-weight: 500;
+  font-family: 'Vollkorn', serif;
+  text-transform: full-width;
+  font-weight: 750;
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 10px;
 }
 .timeline-content p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 500;
 }
 .timeline-content .date {
+  font-style: italic;
+  color: #F4EACE;
   font-size: 12px;
   font-weight: 300;
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .timeline:before {
     content: "";
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
     width: 2px;
     height: 100%;
-    background-color: gray;
+    background-color: #E30A17;
   }
   .timeline ul li {
     width: 50%;
@@ -87,7 +162,7 @@ html {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: #E30A17;
     top: 0px;
   }
   .timeline ul li:nth-child(odd)::before {
@@ -103,6 +178,9 @@ html {
     top: -30px;
   }
   .timeline ul li:hover::before {
-    background-color: aqua;
+    background-color: #231E0D;
   }
 }
+
+/* I referenced a tutorial I found on Youtube,
+https://www.youtube.com/watch?v=zNccqv0g6Q4, to make the timeline. */
